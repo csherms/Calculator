@@ -38,6 +38,18 @@ input {
   font-size: 40px;
 }
 
+.clear {
+  grid-column: span 2;
+  width: 120px;
+  border-radius: 42px;
+}
+
+.equal {
+  grid-column: span 2;
+  width: 120px;
+  border-radius: 42px;
+}
+
 button {
   background-color: rgb(66, 66, 66);
   color: white;
@@ -50,22 +62,10 @@ button {
   font-size: 20px;
 }
 
-.equal {
-  grid-column: span 2;
-  width: 120px;
-  border-radius: 42px;
-}
-
 .operations_buttons {
   background-color: orange;
 }
 
 .special_buttons {
   background-color: rgb(170, 170, 170);
-}
-
-.clear {
-  grid-column: span 2;
-  width: 120px;
-  border-radius: 42px;
 }
