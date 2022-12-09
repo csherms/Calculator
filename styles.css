@@ -62,3 +62,9 @@ button {
 .special_buttons {
   background-color: rgb(170, 170, 170);
 }
+
+.clear {
+  grid-column: span 2;
+  width: 120px;
+  border-radius: 42px;
+}
