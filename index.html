@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="calculator">
+      <input type="text" id="input-text" placeholder="0">
+      <button onclick="clr()" class="special_buttons">C</button>
+      <button onclick="del()" class="special_buttons">&LeftArrowBar;</button>
+      <button onclick="calculate('%')" class="special_buttons">%</button>
+      <button onclick="calculate('/')" class="operations_buttons">/</button>
+      <button onclick="calculate(7)">7</button>
+      <button onclick="calculate(8)">8</button>
+      <button onclick="calculate(9)">9</button>
+      <button onclick="calculate('*')" class="operations_buttons">&times;</button>
+      <button onclick="calculate(4)">4</button>
+      <button onclick="calculate(5)">5</button>
+      <button onclick="calculate(6)">6</button>
+      <button onclick="calculate('-')" class="operations_buttons">-</button>
+      <button onclick="calculate(1)">1</button>
+      <button onclick="calculate(2)">2</button>
+      <button onclick="calculate(3)">3</button>
+      <button onclick="calculate('+')" class="operations_buttons">+</button>
+      <button onclick="calculate('.')">.</button>
+      <button onclick="calculate(0)">0</button>
+      <button onclick="equals()" class="operations_buttons equal">=</button>
+    </div>
+  </main>
+</body>
+
+</html>
