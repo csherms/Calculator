@@ -13,25 +13,28 @@
 <body>
   <main class="container">
     <div class="calculator">
-      <input type="text" id="input-text" placeholder="0">
+      <section class="display-container">
+        <input type="text" id="input-text" placeholder="0">
+        <input type="text" id="input-text2" placeholder="0">
+      </section>
       <button onclick="clr()" class="special_buttons clear">Clear</button>
-      <button onclick="del()" class="special_buttons">&LeftArrowBar;</button>
-      <button onclick="calculate('/')" class="operations_buttons">/</button>
-      <button onclick="calculate(7)">7</button>
-      <button onclick="calculate(8)">8</button>
-      <button onclick="calculate(9)">9</button>
-      <button onclick="calculate('*')" class="operations_buttons">&times;</button>
-      <button onclick="calculate(4)">4</button>
-      <button onclick="calculate(5)">5</button>
-      <button onclick="calculate(6)">6</button>
-      <button onclick="calculate('-')" class="operations_buttons">-</button>
-      <button onclick="calculate(1)">1</button>
-      <button onclick="calculate(2)">2</button>
-      <button onclick="calculate(3)">3</button>
-      <button onclick="calculate('+')" class="operations_buttons">+</button>
-      <button onclick="calculate('.')">.</button>
-      <button onclick="calculate(0)">0</button>
-      <button onclick="equals()" class="operations_buttons equal">=</button>
+      <button onclick="backSpace()" class="special_buttons">&LeftArrowBar;</button>
+      <button onclick="operationKeys('/')" class="operations_buttons">/</button>
+      <button onclick="updateDisplay(7)">7</button>
+      <button onclick="updateDisplay(8)">8</button>
+      <button onclick="updateDisplay(9)">9</button>
+      <button onclick="operationKeys('*')" class="operations_buttons">&times;</button>
+      <button onclick="updateDisplay(4)">4</button>
+      <button onclick="updateDisplay(5)">5</button>
+      <button onclick="updateDisplay(6)">6</button>
+      <button onclick="operationKeys('-')" class="operations_buttons">-</button>
+      <button onclick="updateDisplay(1)">1</button>
+      <button onclick="updateDisplay(2)">2</button>
+      <button onclick="updateDisplay(3)">3</button>
+      <button onclick="operationKeys('+')" class="operations_buttons">+</button>
+      <button onclick="updateDisplay('.')" id="decimal-button">.</button>
+      <button onclick="updateDisplay(0)">0</button>
+      <button onclick="operate()" class="operations_buttons equal">=</button>
     </div>
   </main>
 </body>
