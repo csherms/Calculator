@@ -112,4 +112,3 @@ const checkNumberLength = (num) => {
   }
   dispValueBottom.value = `Answer: ${dispValue.value}`;
 };
-// If someting goes wrong know that you have to replace the displayValue.value (at top) and dispValueBottom.value (at bottom) in each Math function
