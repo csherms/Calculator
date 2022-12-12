@@ -106,7 +106,7 @@ decimalButton.addEventListener("click", () => {
 const checkNumberLength = (num) => {
   let strNum = num.toString();
   if (strNum.length > 9) {
-    dispValue.value = parseFloat(num.toFixed(2));
+    dispValue.value = parseFloat(num.toFixed(4));
   } else {
     dispValue.value = parseFloat(num);
   }
